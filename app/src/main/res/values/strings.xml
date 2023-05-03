@@ -1,3 +1,17 @@
 <resources>
     <string name="app_name">Academy</string>
+    <string name="user_label">User</string>
+    <string name="password_label">Password</string>
+    <string name="login_label">Login</string>
+    <string name="user_bloecked">EL usuario se encuentra bloqueado.</string>
+    <string name="wrong_user_info">La información es incorrecta.</string>
+    <string name="lenght_password_error">La contraseña es de al menos 6 caracteres.</string>
+    <string name="missing_capital_letter_error">Su contraseña requiere al menos de una mayúscula.</string>
+    <string name="enroll">Unirse</string>
+    <string name="add_new_course">Agregar nuevo curso</string>
+    <string name="course_id">Id del curso</string>
+    <string name="course_name">Nombre del curso</string>
+    <string name="course_description">Descripción</string>
+    <string name="course_lecturer">Nombre del instructor</string>
+    <string name="create_course">Create Course</string>
 </resources>
