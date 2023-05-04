@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Admin Academy</string>
+    <string name="add_new_course">Agregar nuevo curso</string>
+    <string name="course_id">Id del curso</string>
+    <string name="course_name">Nombre del curso</string>
+    <string name="course_description">Descripción</string>
+    <string name="course_lecturer">Nombre del instructor</string>
+    <string name="create_course">Create Course</string>
+</resources>

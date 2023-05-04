@@ -2,10 +2,10 @@ package com.wizeline.myacademy.app.ui.dashboard
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import com.wizeline.myacademy.app.data.courses.CoursesRepository
-import com.wizeline.myacademy.app.domain.users.GetCurrentUserUseCase
-import com.wizeline.myacademy.app.ui.courses.CourseUi
-import com.wizeline.myacademy.app.ui.courses.CoursesUiState
+import dev.irving.basecode.data.course.CoursesRepository
+import dev.irving.basecode.domain.users.GetCurrentUserUseCase
+import dev.irving.basecode.ui.courses.CourseUi
+import dev.irving.basecode.ui.courses.CoursesUiState
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.flow.SharingStarted
 import kotlinx.coroutines.flow.StateFlow

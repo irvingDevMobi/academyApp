@@ -1,7 +1,7 @@
 package com.wizeline.myacademy.app.ui.dashboard
 
-import com.wizeline.myacademy.app.domain.users.UserType
-import com.wizeline.myacademy.app.ui.courses.CoursesUiState
+import dev.irving.basecode.domain.users.UserType
+import dev.irving.basecode.ui.courses.CoursesUiState
 
 data class DashboardUiState(
     val isLoading: Boolean = true,

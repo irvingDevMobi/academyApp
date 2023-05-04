@@ -3,7 +3,7 @@ package com.wizeline.myacademy.app.ui.app
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
-import com.wizeline.myacademy.app.ui.theme.AcademyTheme
+import dev.irving.basecode.theme.AcademyTheme
 import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint
