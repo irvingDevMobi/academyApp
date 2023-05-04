@@ -88,6 +88,7 @@ dependencies {
     debugImplementation 'androidx.compose.ui:ui-test-manifest'
 
     googleImplementation 'com.google.firebase:firebase-analytics-ktx'
+    huaweiImplementation 'com.huawei.hms:hianalytics:6.7.0.300'
 
     kapt "com.google.dagger:hilt-compiler:$hiltVersion"
 
