@@ -12,17 +12,22 @@ fun DashboardScreen(
 ) {
     val uiState by dashboardViewModel.uiState.collectAsStateWithLifecycle()
     DashboardView(
-        dashboardUiState = uiState
+        dashboardUiState = uiState,
+        joinButtonClicked = { dashboardViewModel.joinCourse(it) }
     )
 }
 
 @Composable
 fun DashboardView(
-    dashboardUiState: DashboardUiState
+    dashboardUiState: DashboardUiState,
+    joinButtonClicked: (String) -> Unit
 ) {
     if (dashboardUiState.isLoading) {
         LoadingScreen()
     } else {
-        CoursesScreen(uiState = dashboardUiState.coursesUiState)
+        CoursesScreen(
+            uiState = dashboardUiState.coursesUiState,
+            courseJoinClicked = joinButtonClicked
+        )
     }
 }

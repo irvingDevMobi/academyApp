@@ -16,7 +16,8 @@ class CoursesFirebaseSource(
     private val dispatcher: CoroutineDispatcher
 ) : CourseOnlyReadSource {
 
-    private val _courseFlow = MutableStateFlow<List<dev.irving.basecode.domain.courses.Course>>(listOf())
+    private val _courseFlow =
+        MutableStateFlow<List<dev.irving.basecode.domain.courses.Course>>(listOf())
 
     override val coursesFlow: StateFlow<List<dev.irving.basecode.domain.courses.Course>>
         get() = _courseFlow
@@ -31,7 +32,7 @@ class CoursesFirebaseSource(
                 val courses = snapshot.children.map { child ->
                     val courseResponse = child.getValue<CourseResponse>() ?: CourseResponse()
                     dev.irving.basecode.domain.courses.Course(
-                        snapshot.key ?: "",
+                        child.key ?: "",
                         courseResponse.name,
                         courseResponse.description,
                         courseResponse.lecturer
@@ -51,7 +52,6 @@ class CoursesFirebaseSource(
         val coursesRef = Firebase.database.getReference("courses")
         coursesRef.addValueEventListener(eventListener)
     }
-
 
 
 }

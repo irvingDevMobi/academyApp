@@ -5,6 +5,7 @@ import dev.irving.basecode.ui.courses.CoursesUiState
 
 data class DashboardUiState(
     val isLoading: Boolean = true,
-    val userType: UserType? = null,
+    val userId: String = "",
+    val userType: UserType = UserType.UNKNOWN,
     val coursesUiState: CoursesUiState = CoursesUiState(listOf())
 )

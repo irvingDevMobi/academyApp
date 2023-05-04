@@ -26,7 +26,7 @@ import dev.irving.basecode.theme.AcademyTheme
 fun CoursesScreen(
     uiState: CoursesUiState,
     modifier: Modifier = Modifier,
-    buttonClicked: (String) -> Unit = {}
+    courseJoinClicked: (String) -> Unit = {}
 ) {
     LazyColumn(
         contentPadding = PaddingValues(16.dp),
@@ -50,7 +50,7 @@ fun CoursesScreen(
                     Text(text = uiItem.description)
                     Spacer(modifier = Modifier.size(8.dp))
                     Button(
-                        onClick = { buttonClicked(uiItem.id) },
+                        onClick = { courseJoinClicked(uiItem.id) },
                         modifier = modifier.align(Alignment.End),
                         enabled = !uiItem.enrolled
                     ) {
